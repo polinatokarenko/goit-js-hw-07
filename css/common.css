@@ -13,6 +13,8 @@ body {
   line-height: 1.5;
 }
 
+/*task 1*/
+
 #categories {
   display: flex;
   flex-direction: column;
@@ -50,4 +52,23 @@ body {
   border: 1px solid #808080;
   border-radius: 4px;
   max-width: 360px;
+}
+
+/*task 2*/
+.gallery {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.gallery > li {
+  width: calc((100% - 48px) / 3);
+}
+
+.gallery > li > img {
+  width: 360px;
+  height: 300px;
+  object-fit: cover;
 }
