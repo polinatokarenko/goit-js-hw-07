@@ -159,3 +159,36 @@ form > button {
 form > button:hover {
   background: #6c8cff;
 }
+
+/*task 5*/
+.change-color {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 148px;
+    height: 40px;
+    background: #4e75ff;
+    border-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    padding-left: 10.5px;
+}
+
+.change-color:hover {
+  background: #6c8cff;
+}
+
+.widget > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
