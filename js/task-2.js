@@ -25,15 +25,10 @@ const images = [
   }
 ];
 
-const ul = document.querySelector(".gallery")
+const ul = document.querySelector(".gallery");
 
-images.forEach(element => {
-  const li = document.createElement("li");
-  const img = document.createElement("img");
+const markup = images
+  .map(({ url, alt }) => `<li><img src="${url}" alt="${alt}"></li>`)
+  .join("");
 
-  img.src = element.url;
-  img.alt = element.alt;
-
-  ul.append(li);
-  li.append(img);
-});
+ul.insertAdjacentHTML("beforeend", markup);
